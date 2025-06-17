@@ -1,0 +1,42 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* Base styles */
+body {
+  @apply font-sans text-base text-nhs-darkGrey bg-white;
+}
+
+/* Headings */
+h1 {
+  @apply text-lg font-bold text-nhs-blue;
+}
+
+h2 {
+  @apply text-base font-bold text-nhs-blue;
+}
+
+h3, h4, h5, h6 {
+  @apply font-semibold text-nhs-darkGrey;
+}
+
+/* Links */
+a {
+  @apply text-nhs-blue underline hover:text-nhs-lightBlue;
+}
+
+/* Buttons (base style, override with variants later) */
+button {
+  @apply px-4 py-2 rounded-md font-medium transition-colors duration-150;
+}
+
+/* Inputs */
+input, textarea, select {
+  @apply border border-nhs-darkGrey rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-nhs-blue;
+}
+
+/* Cards or surfaces */
+.card {
+  @apply bg-white p-4 rounded-md shadow-card;
+}
